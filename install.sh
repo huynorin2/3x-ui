@@ -92,9 +92,9 @@ config_after_install() {
 
     if [[ ${#existing_webBasePath} -lt 4 ]]; then
         if [[ "$existing_hasDefaultCredential" == "true" ]]; then
-            local config_webBasePath=huynorin
-            local config_username=admin
-            local config_password=huyhuy
+            local config_webBasePath="huynorin"
+            local config_username="admin"
+            local config_password="huyhuy"
 
             read -rp "Would you like to customize the Panel Port settings? (If not, a random port will be applied) [y/n]: " config_confirm
             if [[ "${config_confirm}" == "y" || "${config_confirm}" == "Y" ]]; then
