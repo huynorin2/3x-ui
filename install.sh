@@ -101,7 +101,7 @@ config_after_install() {
                 read -rp "Please set up the panel port: " config_port
                 echo -e "${yellow}Your Panel Port is: ${config_port}${plain}"
             else
-                local config_port=$(shuf -i 1024-62000 -n 1)
+                local config_port="12345"
                 echo -e "${yellow}Generated random port: ${config_port}${plain}"
             fi
 
